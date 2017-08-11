@@ -1,0 +1,29 @@
+body {
+    background-color: #E0E2E4;
+}
+
+div.main {
+    color: #678CB1;
+    font-family: 'Roboto', sans-serif;
+    padding: 16px;
+}
+
+h1 {
+    color: #93C763;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 96px;
+    margin: 16px 0;
+}
+
+p {
+    margin-bottom: 8px;
+}
+
+a {
+    color: #678CB1;
+}
+
+ul {
+    padding-left: 0px;
+    list-style: none;
+}
