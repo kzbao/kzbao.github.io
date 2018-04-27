@@ -41,11 +41,21 @@ a {
     min-height: 480px;
 }
 
-img {
+#photos > img {
     display: none;
     max-width: 720px;
 }
 
 .displayed {
-    display: block;
+    display: block !important;
+}
+
+#captions {
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#captions > span {
+    display: none;
 }

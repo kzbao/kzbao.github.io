@@ -8,6 +8,7 @@ var PHOTO_URLS = [
 var index = 0;
 var loaded = false;
 var photos = document.getElementById('photos');
+var captions = document.getElementById('captions');
 
 (() => {
     photos.addEventListener('click', () => {
@@ -16,6 +17,7 @@ var photos = document.getElementById('photos');
 
     function rotate() {
         photos.children[index].classList.remove('displayed');
+        captions.children[index].classList.remove('displayed');
 
         index = (index + 1) % PHOTO_URLS.length;
         if (!loaded) {
@@ -26,6 +28,7 @@ var photos = document.getElementById('photos');
         }
 
         photos.children[index].classList.add('displayed');
+        captions.children[index].classList.add('displayed');
     }
 
     function load(photo) {
