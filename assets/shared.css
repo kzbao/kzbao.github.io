@@ -1,0 +1,43 @@
+body {
+    background-color: #002b36;
+}
+
+.main {
+    color: #839496;
+    font-family: sans-serif;
+    line-height: 1.25em;
+    padding: 40px;
+    width: 960px;
+}
+
+.main > div {
+    margin-bottom: 40px;
+}
+
+h1 {
+    color: #859900;
+    font-family: Impact, sans-serif;
+    font-size: 80px;
+    line-height: 80px;
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+
+.hoverable:hover {
+    color: #268bd2;
+}
+
+h2 {
+    color: #268bd2;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #2aa198;
+    text-decoration: none;
+}
