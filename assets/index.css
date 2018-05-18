@@ -1,9 +1,9 @@
 body {
-    background-color: #383134;
+    background-color: #002b36;
 }
 
 .main {
-    color: #2aa198;
+    color: #839496;
     font-family: sans-serif;
     line-height: 1.25em;
     padding: 40px;
@@ -15,7 +15,7 @@ body {
 }
 
 h1 {
-    color: #FC4628;
+    color: #859900;
     font-family: Impact, sans-serif;
     font-size: 80px;
     line-height: 80px;
@@ -24,7 +24,7 @@ h1 {
 }
 
 .hoverable:hover {
-    color: #FFDD1C;
+    color: #268bd2;
 }
 
 p {
@@ -33,6 +33,7 @@ p {
 
 a {
     color: #2aa198;
+    text-decoration: none;
 }
 
 #photos {
@@ -51,7 +52,6 @@ a {
 }
 
 #captions {
-    color: white;
     margin-top: 10px;
     text-align: center;
 }
