@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'SourceCodePro';
+    src: url('SourceCodePro.woff') format('woff');
+}
+
+.main {
+    font-family: 'SourceCodePro';
+}
+
+h1 {
+    font-family: 'SourceCodePro' !important;
+}
