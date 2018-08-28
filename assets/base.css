@@ -1,12 +1,17 @@
+@font-face {
+    font-family: 'SourceCodePro';
+    src: url('SourceCodePro.woff') format('woff');
+}
+
 body {
-    background-color: #002b36;
+    background-color: #282c34;
+    font-family: 'SourceCodePro';
 }
 
 .main {
-    color: #839496;
-    font-family: sans-serif;
+    color: #bbc2cf;
     line-height: 1.25em;
-    padding: 40px;
+    margin: 40px auto 0px;
     width: 960px;
 }
 
@@ -15,20 +20,15 @@ body {
 }
 
 h1 {
-    color: #859900;
-    font-family: Impact, sans-serif;
+    color: #51afef;
     font-size: 80px;
     line-height: 80px;
     margin-bottom: 40px;
     margin-top: 0;
 }
 
-.hoverable:hover {
-    color: #268bd2;
-}
-
 h2 {
-    color: #268bd2;
+    color: #7bc275;
     font-size: 40px;
     line-height: 40px;
 }
@@ -38,6 +38,6 @@ p {
 }
 
 a {
-    color: #2aa198;
+    color: #a9a1e1;
     text-decoration: none;
 }
