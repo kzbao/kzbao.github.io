@@ -12,7 +12,7 @@ body {
     color: #bbc2cf;
     line-height: 1.25em;
     margin: 40px auto 0px;
-    width: 960px;
+    max-width: 960px;
 }
 
 .main > div {
