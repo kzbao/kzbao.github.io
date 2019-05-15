@@ -4,7 +4,11 @@
 }
 
 h1 {
-    font-family: 'Anson' !important;
+    font-family: 'Anson';
+}
+
+.main > div {
+    margin-bottom: 40px !important;
 }
 
 #headshot {
