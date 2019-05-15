@@ -1,11 +1,11 @@
 @font-face {
-    font-family: 'SourceCodePro';
-    src: url('SourceCodePro.woff') format('woff');
+    font-family: 'DejaVuSans';
+    src: url('DejaVuSans.ttf') format('ttf');
 }
 
 body {
     background-color: #282c34;
-    font-family: 'SourceCodePro';
+    font-family: 'DejaVuSans';
 }
 
 .main {
@@ -22,14 +22,17 @@ body {
 h1 {
     color: #51afef;
     font-size: 80px;
+    font-weight: normal;
     line-height: 80px;
     margin-bottom: 40px;
     margin-top: 0;
+    text-align: center;
 }
 
 h2 {
     color: #7bc275;
     font-size: 40px;
+    font-weight: normal;
     line-height: 40px;
 }
 

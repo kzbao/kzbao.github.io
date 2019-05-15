@@ -1,8 +1,7 @@
-
-.main {
-    font-family: 'SourceCodePro';
+h1 {
+    margin-bottom: 80px !important;;
 }
 
-h1 {
-    font-family: 'SourceCodePro' !important;
+.main > div {
+    margin-bottom: 80px !important;
 }
