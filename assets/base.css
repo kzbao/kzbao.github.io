@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'DejaVuSans';
-    src: url('DejaVuSans.ttf') format('ttf');
+    src: url('DejaVuSans.woff') format('woff');
 }
 
 body {
     background-color: #282c34;
-    font-family: 'DejaVuSans';
+    font-family: 'DejaVuSans', sans-serif;
 }
 
 .main {
