@@ -15,6 +15,7 @@ h1 {
     border-radius: 50%;
     display: block;
     margin: 0 auto 40px;
+    max-height: 480px;
     max-width: 480px;
 }
 
@@ -25,19 +26,10 @@ h1 {
 }
 
 #photos > img {
-    display: none;
     max-width: 720px;
-}
-
-.displayed {
-    display: block !important;
 }
 
 #captions {
     margin-top: 10px;
     text-align: center;
-}
-
-#captions > span {
-    display: none;
 }
