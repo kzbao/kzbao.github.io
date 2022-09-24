@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'Anson';
     src: url('Anson.woff') format('woff');
+    font-display: swap;
 }
 
 h1 {

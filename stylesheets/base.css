@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'DejaVuSans';
     src: url('DejaVuSans.woff') format('woff');
+    font-display: swap;
 }
 
 body {
