@@ -1,47 +1,48 @@
 @font-face {
-    font-family: 'DejaVuSans';
-    src: url('DejaVuSans.woff') format('woff');
-    font-display: swap;
+  font-family: 'DejaVuSans';
+  src: url('DejaVuSans.woff') format('woff');
+  font-display: swap;
 }
 
 body {
-    background-color: #282c34;
-    font-family: 'DejaVuSans', sans-serif;
+  background-color: #282c34;
+  font-family: 'DejaVuSans', sans-serif;
 }
 
 .main {
-    color: #bbc2cf;
-    line-height: 1.25em;
-    margin: 40px auto 0px;
-    max-width: 960px;
+  color: #bbc2cf;
+  line-height: 1.25em;
+  margin: 40px auto 0px;
+  max-width: 960px;
+  padding: 0 20px;
 }
 
 .main > div {
-    margin-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 h1 {
-    color: #51afef;
-    font-size: 80px;
-    font-weight: normal;
-    line-height: 80px;
-    margin-bottom: 40px;
-    margin-top: 0;
-    text-align: center;
+  color: #51afef;
+  font-size: 80px;
+  font-weight: normal;
+  line-height: 80px;
+  margin-bottom: 40px;
+  margin-top: 0;
+  text-align: center;
 }
 
 h2 {
-    color: #7bc275;
-    font-size: 40px;
-    font-weight: normal;
-    line-height: 40px;
+  color: #7bc275;
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 40px;
 }
 
 p {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 a {
-    color: #a9a1e1;
-    text-decoration: none;
+  color: #a9a1e1;
+  text-decoration: none;
 }

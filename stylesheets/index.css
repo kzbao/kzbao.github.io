@@ -1,36 +1,35 @@
 @font-face {
-    font-family: 'Anson';
-    src: url('Anson.woff') format('woff');
-    font-display: swap;
-}
-
-h1 {
-    font-family: 'Anson';
+  font-family: 'Anson';
+  src: url('Anson.woff') format('woff');
+  font-display: swap;
 }
 
 .main > div {
-    margin-bottom: 40px !important;
+  margin-bottom: 40px !important;
+}
+
+h1 {
+  font-family: 'Anson';
 }
 
 #headshot {
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto 40px;
-    max-height: 480px;
-    max-width: 480px;
-}
-
-#photos {
-    margin: 0 auto;
-    width: 720px;
-    min-height: 480px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 40px;
+  max-width: 80%;
+  max-height: 80%;
+  width: auto;
+  height: auto;
 }
 
 #photos > img {
-    max-width: 720px;
+  max-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
 }
 
 #captions {
-    margin-top: 10px;
-    text-align: center;
+  margin-top: 10px;
+  text-align: center;
 }
