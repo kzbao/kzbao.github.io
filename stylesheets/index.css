@@ -4,10 +4,6 @@
   font-display: swap;
 }
 
-.main > div {
-  margin-bottom: 40px !important;
-}
-
 h1 {
   font-family: 'Anson';
 }
@@ -22,14 +18,25 @@ h1 {
   height: auto;
 }
 
+#photos {
+  height: 640px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1000px) {
+  #photos {
+    height: 65vw;
+  }
+}
+
 #photos > img {
+  margin: 0 auto;
   max-width: 100%;
-  min-height: 100%;
+  max-height: 100%;
   width: auto;
   height: auto;
 }
 
 #captions {
-  margin-top: 10px;
   text-align: center;
 }
