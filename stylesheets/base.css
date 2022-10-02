@@ -6,13 +6,13 @@
 
 body {
   background-color: #282c34;
+  color: #bbc2cf;
   font-family: 'DejaVuSans', sans-serif;
+  line-height: 1.25em;
 }
 
 .main {
-  color: #bbc2cf;
-  line-height: 1.25em;
-  margin: 40px auto 0px;
+  margin: 40px auto;
   max-width: 960px;
   padding: 0 10px;
 }
