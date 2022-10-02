@@ -11,13 +11,23 @@
     }
   });
 
-  function rotate(skip) {
+  function rotate(direction) {
     photos.children[index].lastElementChild.style.display = 'none';
     captions.children[index].style.display = 'none';
 
-    index = (index + skip) % photos.childElementCount;
-    if (index == -1) {
-      index = photos.childElementCount - 1;
+    index = (index + direction) % photos.childElementCount;
+
+    if (direction == -1) {
+      if (index == -1) {
+        index = photos.childElementCount - 1;
+      }
+      gtag('event', 'image_rotation', {
+        'direction': 'left'
+      });
+    } else {
+      gtag('event', 'image_rotation', {
+        'direction': 'right'
+      });
     }
 
     photos.children[index].lastElementChild.style.display = 'block';
