@@ -30,12 +30,6 @@ h1 {
   }
 }
 
-#photos img {
-  object-fit: cover;
-  max-width: 100%;
-  max-height: 100%;
-}
-
 #captions {
   text-align: center;
   margin-bottom: 20px;
