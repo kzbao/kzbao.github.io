@@ -21,13 +21,7 @@ h1 {
 #photos {
   margin: -20px auto 10px;
   max-width: 1920px;
-  height: 1280px;
-}
-
-@media (max-width: 1936px) {
-  #photos {
-    height: 66vw;
-  }
+  aspect-ratio: 1.5;
 }
 
 #captions {
