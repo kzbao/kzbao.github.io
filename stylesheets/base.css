@@ -1,13 +1,13 @@
 @font-face {
-  font-family: 'DejaVuSans';
-  src: url('DejaVuSans.woff') format('woff');
+  font-family: 'Hack';
+  src: url('hack.woff2') format('woff2');
   font-display: swap;
 }
 
 body {
   background-color: #282c34;
   color: #bbc2cf;
-  font-family: 'DejaVuSans', sans-serif;
+  font-family: 'Hack', monospace;
   line-height: 1.25em;
 }
 

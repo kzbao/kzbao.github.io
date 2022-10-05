@@ -1,13 +1,3 @@
-@font-face {
-  font-family: 'Anson';
-  src: url('Anson.woff') format('woff');
-  font-display: swap;
-}
-
-h1 {
-  font-family: 'Anson';
-}
-
 #headshot {
   border-radius: 50%;
   display: block;
