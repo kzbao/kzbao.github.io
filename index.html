@@ -10,7 +10,68 @@
     <link rel="icon" type="img/ico" href="assets/piano.ico">
     <link rel="preload" href="stylesheets/hack.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="stylesheets/base-min.css">
-    <link rel="stylesheet" href="stylesheets/index-min.css">
+
+    <style>
+     #headshot {
+       border-radius: 50%;
+       display: block;
+       margin: 0 auto 40px;
+       max-width: 80%;
+       max-height: 80%;
+       width: auto;
+       height: auto;
+     }
+
+     #photos {
+       margin: -20px auto 10px;
+       max-width: 1920px;
+       aspect-ratio: 1.5;
+     }
+
+     #captions {
+       text-align: center;
+       margin-bottom: 20px;
+     }
+    </style>
+
+    <script>
+     window.addEventListener('DOMContentLoaded', () => {
+       var index = 0;
+       var photos = document.getElementById('photos');
+       var captions = document.getElementById('captions');
+
+       photos.addEventListener('click', (event) => {
+         if (event.x > photos.offsetLeft + photos.clientWidth / 2) {
+           rotate(1);
+         } else {
+           rotate(-1);
+         }
+       });
+
+       function rotate(direction) {
+         photos.children[index].lastElementChild.style.display = 'none';
+         captions.children[index].style.display = 'none';
+
+         index = (index + direction) % photos.childElementCount;
+
+         if (direction == -1) {
+           if (index == -1) {
+             index = photos.childElementCount - 1;
+           }
+           gtag('event', 'image_rotation', {
+             'direction': 'left'
+           });
+         } else {
+           gtag('event', 'image_rotation', {
+             'direction': 'right'
+           });
+         }
+
+         photos.children[index].lastElementChild.style.display = 'block';
+         captions.children[index].style.display = 'block';
+       }
+     });
+    </script>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7MPK0QFS3R"></script>
     <script>
@@ -23,7 +84,7 @@
   </head>
 
   <body>
-    <div class="main">
+    <section class="main">
       <div>
         <h1>Hi, I'm Kevin Zhao Bao.</h1>
 
@@ -71,16 +132,15 @@
 
       <div>
         <a href="reading">Reading List</a> |
-        <a href="coach">Coaching</a> |
         <a href="https://www.linkedin.com/in/kevin-bao-9125914b/">LinkedIn</a>
       </div>
 
       <div>
         <p>Some of my photos (mostly shot on my Nikon D750):</p>
       </div>
-    </div>
+    </section>
 
-    <div id="photos">
+    <section id="photos">
       <picture>
         <source srcSet="https://assets.kevinbao.com/_DSC2577.avif" type="image/avif" />
         <img src="https://assets.kevinbao.com/_DSC2577.jpg" alt="Chain Lakes Loop, Mt. Baker Wilderness" loading="lazy" style="display: block;" />
@@ -129,9 +189,9 @@
         <source srcSet="https://assets.kevinbao.com/_DSC7472.avif" type="image/avif" />
         <img src="https://assets.kevinbao.com/_DSC7472.jpg" alt="Cascade Range, USA" loading="lazy" style="display: none;" />
       </picture>
-    </div>
+    </section>
 
-    <div id="captions">
+    <section id="captions">
       <span style="display: block;">Chain Lakes Loop, Mt. Baker Wilderness</span>
       <span style="display: none;">Chasing the stars, Mt. Rainier</span>
       <span style="display: none;">On the Wonderland Trail, Mt. Rainier</span>
@@ -144,8 +204,6 @@
       <span style="display: none;">From above, Seattle</span>
       <span style="display: none;">Total solar eclipse, Oregon</span>
       <span style="display: none;">Cascade Range, USA</span>
-    </div>
-
-    <script src="javascript/index-min.js"></script>
+    </section>
   </body>
 </html>
