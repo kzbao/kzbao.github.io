@@ -23,9 +23,13 @@
      }
 
      #photos {
-       margin: -20px auto 10px;
-       max-width: 1920px;
+       margin: 0 auto 10px;
+       max-width: 1600px;
        aspect-ratio: 1.5;
+     }
+
+     #photos > img {
+       margin: 0 auto;
      }
 
      #captions {
@@ -49,7 +53,7 @@
        });
 
        function rotate(direction) {
-         photos.children[index].lastElementChild.style.display = 'none';
+         photos.children[index].style.display = 'none';
          captions.children[index].style.display = 'none';
 
          index = (index + direction) % photos.childElementCount;
@@ -67,7 +71,7 @@
            });
          }
 
-         photos.children[index].lastElementChild.style.display = 'block';
+         photos.children[index].style.display = 'block';
          captions.children[index].style.display = 'block';
        }
      });
@@ -96,7 +100,7 @@
           I'm a problem solver, engineering leader, and lifelong adventurer.
           I currently live in Bellevue, Washington, though I grew up mostly in Ellicott City, Maryland, where I consumed countless blue crabs, and root for New England sports teams (thanks to being born in Rhode Island).
           I attended Carnegie Mellon University and graduated at age 20 with dual degrees in computer science and economics.
-          I'm married to my lovely wife, Taylor, as of July 2023 and we split our time between Washington and South Korea at the moment.
+          I'm married to my lovely wife, Taylor, as of July 2023 and we spend our time between Washington state and South Korea.
         </p>
 
         <p>
@@ -120,11 +124,11 @@
         </p>
 
         <p>
-          Most recently, I was an engineering manager at Assurance IQ, an insurtech company based out of Seattle. I joined to help build out the mortgage/personal loans business during COVID-era interest rates. By the end, I was accountable for our lead generation platform behind $500M+ in annual revenue across different types of insurance/financial products. I managed frontend, backend, and full stack teams.
+          Most recently, I was a senior engineering manager at Assurance IQ, an insurtech company based out of Seattle. I joined to help build out the mortgage/personal loans business during COVID-era interest rates. By the end, I was accountable for our lead generation platform behind $500M+ in annual revenue across different types of insurance/financial products. I managed frontend, backend, and full stack teams.
         </p>
 
         <p>
-          I'm now taking some time to look for the next thing... Reach out if you'd like!
+          I'm now taking some time to look for the next thing. Reach out if you'd like!
         </p>
 
         <p>
@@ -136,79 +140,76 @@
       </div>
 
       <div>
-        <a href="reading">Reading List</a> |
-        <a href="https://www.linkedin.com/in/kevin-bao-9125914b/">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/kevin-bao-9125914b/">LinkedIn</a> |
+        <a href="https://github.com/kzbao">Github</a>
+        <br />
+        <a href="reading">Reading List</a>
+        <br />
+        <a href="https://www.youtube.com/@baomandu">Youtube</a>
       </div>
 
       <div>
-        <p>Some of my photos (Nikon D750 & Z8, DJI Mini 3 Pro, Insta360 X4):</p>
+        <p>Some of my photos (taken on my Nikon D750 & Z8, DJI Mini 3 Pro, Insta360 X4):</p>
       </div>
     </section>
 
     <section id="photos">
-      <picture>
-        <source srcSet="https://assets.kevinbao.com/_DSC2577.avif" type="image/avif" />
-        <img src="https://assets.kevinbao.com/_DSC2577.jpg" alt="Chain Lakes Loop, Mt. Baker Wilderness" loading="lazy" style="display: block;" />
-      </picture>
-      <picture>
-        <source srcSet="https://assets.kevinbao.com/_DSC3747.avif" type="image/avif" />
-        <img src="https://assets.kevinbao.com/_DSC3747.jpg" alt="Mt. Rainier nighttime, Washington" loading="lazy" style="display: none;" />
-      </picture>
-      <picture>
-        <source srcSet="https://assets.kevinbao.com/DSC02098.avif" type="image/avif" />
-        <img src="https://assets.kevinbao.com/DSC02098.jpg" alt="Mt. Rainier daytime, Washington" loading="lazy" style="display: none;" />
-      </picture>
-      <picture>
-        <source srcSet="https://assets.kevinbao.com/_DSC5168.avif" type="image/avif" />
-        <img src="https://assets.kevinbao.com/_DSC5168.jpg" alt="Aurora Borealis, Alaska" loading="lazy" style="display: none;" />
-      </picture>
-      <picture>
-        <source srcSet="https://assets.kevinbao.com/_DSC0705.avif" type="image/avif" />
-        <img src="https://assets.kevinbao.com/_DSC0705.jpg" alt="Diamond Head, Oahu" loading="lazy" style="display: none;" />
-      </picture>
-      <picture>
-        <source srcSet="https://assets.kevinbao.com/DSC_1497.avif" type="image/avif" />
-        <img src="https://assets.kevinbao.com/DSC_1497.jpg" alt="Black bear cub, Sequioa National Park" loading="lazy" style="display: none;" />
-      </picture>
-      <picture>
-        <source srcSet="https://assets.kevinbao.com/DSC_0391.avif" type="image/avif" />
-        <img src="https://assets.kevinbao.com/DSC_0391.jpg" alt="Grizzly Bear, Banff National Park" loading="lazy" style="display: none;" />
-      </picture>
-      <picture>
-        <source srcSet="https://assets.kevinbao.com/_DSC8700.avif" type="image/avif" />
-        <img src="https://assets.kevinbao.com/_DSC8700.jpg" alt="Temple of Castor and Pollux, Rome" loading="lazy" style="display: none;" />
-      </picture>
-      <picture>
-        <source srcSet="https://assets.kevinbao.com/_DSC1497.avif" type="image/avif" />
-        <img src="https://assets.kevinbao.com/_DSC1497.jpg" alt="Lake Viviane, The Enchantments" loading="lazy" style="display: none;" />
-      </picture>
-      <picture>
-        <source srcSet="https://assets.kevinbao.com/DSC_0363.avif" type="image/avif" />
-        <img src="https://assets.kevinbao.com/DSC_0363.jpg" alt="Seattle, Washington" loading="lazy" style="display: none;" />
-      </picture>
-      <picture>
-        <source srcSet="https://assets.kevinbao.com/_DSC7252.avif" type="image/avif" />
-        <img src="https://assets.kevinbao.com/_DSC7252.jpg" alt="Total solar eclipse, Oregon" loading="lazy" style="display: none;" />
-      </picture>
-      <picture>
-        <source srcSet="https://assets.kevinbao.com/_DSC7472.avif" type="image/avif" />
-        <img src="https://assets.kevinbao.com/_DSC7472.jpg" alt="Cascade Range, USA" loading="lazy" style="display: none;" />
-      </picture>
+      <img src="https://assets.kevinbao.com/_0Z80454.avif" alt="Auroral Borealis" style="display: block;" loading="lazy" />
+      <img src="https://assets.kevinbao.com/_DSC9779.avif" alt="Chasing the stars" style="display: none;" loading="lazy" />
+      <img src="https://assets.kevinbao.com/DSC_1497.avif" alt="Black bear cub" style="display: none;" loading="lazy" />
+      <img src="https://assets.kevinbao.com/DSC_0391.avif" alt="Grizzly bear" style="display: none;" loading="lazy" />
+      <img src="https://assets.kevinbao.com/DJI_0928.avif" alt="Padar Island" style="display: none;" loading="lazy" />
+      <img src="https://assets.kevinbao.com/_DSC2577.avif" alt="Chain Lakes Loop" style="display: none;" loading="lazy" />
+      <img src="https://assets.kevinbao.com/_DSC1497.avif" alt="Lake Viviane" style="display: none;" loading="lazy" />
+      <img src="https://assets.kevinbao.com/_DSC3390.avif" alt="Mountain goats" style="display: none;" loading="lazy" />
+      <img src="https://assets.kevinbao.com/_DSC0706.avif" alt="Diamond Head" style="display: none;" loading="lazy" />
+      <img src="https://assets.kevinbao.com/_DSC7252.avif" alt="Total solar eclipse" style="display: none;" loading="lazy" />
+      <img src="https://assets.kevinbao.com/_DSC7572.avif" alt="Pantheon" style="display: none;" loading="lazy" />
+      <img src="https://assets.kevinbao.com/_DSC8700.avif" alt="Temple of Castor and Pollux" style="display: none;" loading="lazy" />
+      <img src="https://assets.kevinbao.com/_DSC3513.avif" alt="Tiger" style="display: none;" loading="lazy" />
+      <img src="https://assets.kevinbao.com/DJI_0649.avif" alt="Gothic Basin" style="display: none;" loading="lazy" />
+      <img src="https://assets.kevinbao.com/IMG_8289.avif" alt="Thunderbirds" style="display: none;" loading="lazy" />
+      <img src="https://assets.kevinbao.com/_DSC2159.avif" alt="Teton Crest Trail" style="display: none;" loading="lazy" />
+      <img src="https://assets.kevinbao.com/_DSC2343.avif" alt="Teton Range" style="display: none;" loading="lazy" />
+      <img src="https://assets.kevinbao.com/_DSC5571.avif" alt="Kiyomizu-dera" style="display: none;" loading="lazy" />
+      <img src="https://assets.kevinbao.com/_DSC6004.avif" alt="Arashiyama Bamboo Forest" style="display: none;" loading="lazy" />
+      <img src="https://assets.kevinbao.com/DJI_0286.avif" alt="Jigokudani" style="display: none;" loading="lazy" />
+      <img src="https://assets.kevinbao.com/IMG_2249.avif" alt="Sunset" style="display: none;" loading="lazy" />
+      <img src="https://assets.kevinbao.com/_DSC5963.avif" alt="Big Sur" style="display: none;" loading="lazy" />
+      <img src="https://assets.kevinbao.com/_DSC5059.avif" alt="Denali" style="display: none;" loading="lazy" />
+      <img src="https://assets.kevinbao.com/_DSC3980.avif" alt="Mt. Adams" style="display: none;" loading="lazy" />
+      <img src="https://assets.kevinbao.com/DSC02098.avif" alt="Wonderland Trail" style="display: none;" loading="lazy" />
+      <img src="https://assets.kevinbao.com/DSC_0363.avif" alt="Seattle" style="display: none;" loading="lazy" />
     </section>
 
     <section id="captions">
-      <span style="display: block;">Chain Lakes Loop, Mt. Baker Wilderness</span>
-      <span style="display: none;">Chasing the stars, Mt. Rainier</span>
-      <span style="display: none;">On the Wonderland Trail, Mt. Rainier</span>
-      <span style="display: none;">Aurora Borealis, Alaska</span>
-      <span style="display: none;">Diamond Head, Oahu</span>
-      <span style="display: none;">Black bear cub, Sequoia National Park</span>
-      <span style="display: none;">Grizzly bear, Banff National Park</span>
-      <span style="display: none;">Temple of Castor and Pollux, Rome</span>
-      <span style="display: none;">Lake Viviane, The Enchantments</span>
-      <span style="display: none;">From above, Seattle</span>
-      <span style="display: none;">Total solar eclipse, Oregon</span>
-      <span style="display: none;">Cascade Range, USA</span>
+
+      <span style="display: block;">Aurora Borealis - Deception Pass, WA</span>
+      <span style="display: none;">Chasing the stars - Mt. Rainier, WA</span>
+      <span style="display: none;">Black bear cub - Sequoia National Park, CA</span>
+      <span style="display: none;">Grizzly bear - Banff National Park, Canada</span>
+      <span style="display: none;">Padar Island - Indonesia</span>
+      <span style="display: none;">Chain Lakes Loop - Mt. Baker Wilderness, WA</span>
+      <span style="display: none;">Lake Viviane - The Enchantments, WA</span>
+      <span style="display: none;">Mountain goats - The Enchantments, WA</span>
+      <span style="display: none;">Diamond Head - Oahu, HI</span>
+      <span style="display: none;">Total solar eclipse - Oregon</span>
+      <span style="display: none;">Pantheon - Rome, Italy</span>
+      <span style="display: none;">Temple of Castor and Pollux - Rome, Italy</span>
+      <span style="display: none;">Tiger - San Diego Zoo, CA</span>
+      <span style="display: none;">Gothic Basin - North Cascades, WA</span>
+      <span style="display: none;">Thunderbirds - McChord Air Force Base, WA</span>
+      <span style="display: none;">Teton Crest Trail - Wyoming</span>
+      <span style="display: none;">Teton Range - Wyoming</span>
+      <span style="display: none;">Kiyomizu-dera - Kyoto, Japan</span>
+      <span style="display: none;">Arashiyama Bamboo Forest - Kyoto, Japan</span>
+      <span style="display: none;">Jigokudani - Noboribetsu, Japan</span>
+      <span style="display: none;">Sunset - Deception Pass, WA</span>
+      <span style="display: none;">Big Sur - California</span>
+      <span style="display: none;">Denali - Alaska</span>
+      <span style="display: none;">Mt. Adams - Washington</span>
+      <span style="display: none;">Wonderland Trail - Mt. Rainier, WA</span>
+      <span style="display: none;">From above - Seattle, WA</span>
     </section>
   </body>
 </html>
