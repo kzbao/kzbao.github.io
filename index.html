@@ -12,70 +12,8 @@
     <link rel="stylesheet" href="stylesheets/base-min.css">
 
     <style>
-     #headshot {
-       border-radius: 2%;
-       display: block;
-       margin: 0 auto 40px;
-       max-width: 80%;
-       max-height: 80%;
-       width: auto;
-       height: auto;
-     }
-
-     #photos {
-       margin: 0 auto 10px;
-       max-width: 1600px;
-       aspect-ratio: 1.5;
-     }
-
-     #photos > img {
-       margin: 0 auto;
-     }
-
-     #captions {
-       text-align: center;
-       margin-bottom: 20px;
-     }
+     #headshot{border-radius:2%;display:block;margin:0 auto 40px;max-width:80%;width:auto;height:auto}.carousel-container{position:relative;overflow:hidden;max-width:1200px;margin:0 auto;aspect-ratio:4/3}.carousel{display:flex;transition:transform .5s ease-in-out;position:relative}.carousel-slide{min-width:100%;transition:opacity .5s ease-in-out,transform .5s ease-in-out;position:relative}.carousel-slide img{width:100%;display:block}.carousel-button{position:absolute;top:50%;transform:translateY(-50%);background-color:rgba(0,0,0,.4);color:rgba(256,256,256,0.6);border:none;border-radius:4px;box-sizing:border-box;padding:10px 10px;cursor:pointer;font-size:18px;z-index:10}@media(hover:hover){.carousel-button:hover{background-color:rgba(0,0,0,.8);color:rgba(256,256,256,1)}}.carousel-button.prev{left:10px}.carousel-button.next{right:10px}.carousel-slide{opacity:.5;transform:scale(.8)}.carousel-slide.active{opacity:1;transform:scale(1)}.carousel-slide.left,.carousel-slide.right{opacity:.7;transform:scale(.9)}
     </style>
-
-    <script>
-     window.addEventListener('DOMContentLoaded', () => {
-       var index = 0;
-       var photos = document.getElementById('photos');
-       var captions = document.getElementById('captions');
-
-       photos.addEventListener('click', (event) => {
-         if (event.x > photos.offsetLeft + photos.clientWidth / 2) {
-           rotate(1);
-         } else {
-           rotate(-1);
-         }
-       });
-
-       function rotate(direction) {
-         photos.children[index].style.display = 'none';
-         captions.children[index].style.display = 'none';
-
-         index = (index + direction) % photos.childElementCount;
-
-         if (direction == -1) {
-           if (index == -1) {
-             index = photos.childElementCount - 1;
-           }
-           gtag('event', 'image_rotation', {
-             'direction': 'left'
-           });
-         } else {
-           gtag('event', 'image_rotation', {
-             'direction': 'right'
-           });
-         }
-
-         photos.children[index].style.display = 'block';
-         captions.children[index].style.display = 'block';
-       }
-     });
-    </script>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7MPK0QFS3R"></script>
     <script>
@@ -92,7 +30,7 @@
       <div>
         <h1>Hi, I'm Kevin Zhao Bao.</h1>
 
-        <img id="headshot" src="https://assets.kevinbao.com/IMG_20240503_191336_00_021.avif" alt="Main photo" width="400px" height="400px" />
+        <img id="headshot" src="https://assets.kevinbao.com/IMG_20240503_191336_00_021.avif" alt="Headshot" width="400px" height="400px" />
       </div>
 
       <div>
@@ -154,62 +92,67 @@
     </section>
 
     <section id="photos">
-      <img src="https://assets.kevinbao.com/_0Z80454.avif" alt="Auroral Borealis" style="display: block;" loading="lazy" />
-      <img src="https://assets.kevinbao.com/_DSC9779.avif" alt="Chasing the stars" style="display: none;" loading="lazy" />
-      <img src="https://assets.kevinbao.com/DSC_1497.avif" alt="Black bear cub" style="display: none;" loading="lazy" />
-      <img src="https://assets.kevinbao.com/DSC_0391.avif" alt="Grizzly bear" style="display: none;" loading="lazy" />
-      <img src="https://assets.kevinbao.com/DJI_0928.avif" alt="Padar Island" style="display: none;" loading="lazy" />
-      <img src="https://assets.kevinbao.com/_DSC2577.avif" alt="Chain Lakes Loop" style="display: none;" loading="lazy" />
-      <img src="https://assets.kevinbao.com/_DSC1497.avif" alt="Lake Viviane" style="display: none;" loading="lazy" />
-      <img src="https://assets.kevinbao.com/_DSC3390.avif" alt="Mountain goats" style="display: none;" loading="lazy" />
-      <img src="https://assets.kevinbao.com/_DSC0706.avif" alt="Diamond Head" style="display: none;" loading="lazy" />
-      <img src="https://assets.kevinbao.com/_DSC7252.avif" alt="Total solar eclipse" style="display: none;" loading="lazy" />
-      <img src="https://assets.kevinbao.com/_DSC7572.avif" alt="Pantheon" style="display: none;" loading="lazy" />
-      <img src="https://assets.kevinbao.com/_DSC8700.avif" alt="Temple of Castor and Pollux" style="display: none;" loading="lazy" />
-      <img src="https://assets.kevinbao.com/_DSC3513.avif" alt="Tiger" style="display: none;" loading="lazy" />
-      <img src="https://assets.kevinbao.com/DJI_0649.avif" alt="Gothic Basin" style="display: none;" loading="lazy" />
-      <img src="https://assets.kevinbao.com/IMG_8289.avif" alt="Thunderbirds" style="display: none;" loading="lazy" />
-      <img src="https://assets.kevinbao.com/_DSC2159.avif" alt="Teton Crest Trail" style="display: none;" loading="lazy" />
-      <img src="https://assets.kevinbao.com/_DSC2343.avif" alt="Teton Range" style="display: none;" loading="lazy" />
-      <img src="https://assets.kevinbao.com/_DSC5571.avif" alt="Kiyomizu-dera" style="display: none;" loading="lazy" />
-      <img src="https://assets.kevinbao.com/_DSC6004.avif" alt="Arashiyama Bamboo Forest" style="display: none;" loading="lazy" />
-      <img src="https://assets.kevinbao.com/DJI_0286.avif" alt="Jigokudani" style="display: none;" loading="lazy" />
-      <img src="https://assets.kevinbao.com/IMG_2249.avif" alt="Sunset" style="display: none;" loading="lazy" />
-      <img src="https://assets.kevinbao.com/_DSC5963.avif" alt="Big Sur" style="display: none;" loading="lazy" />
-      <img src="https://assets.kevinbao.com/_DSC5059.avif" alt="Denali" style="display: none;" loading="lazy" />
-      <img src="https://assets.kevinbao.com/_DSC3980.avif" alt="Mt. Adams" style="display: none;" loading="lazy" />
-      <img src="https://assets.kevinbao.com/DSC02098.avif" alt="Wonderland Trail" style="display: none;" loading="lazy" />
-      <img src="https://assets.kevinbao.com/DSC_0363.avif" alt="Seattle" style="display: none;" loading="lazy" />
-    </section>
+      <div class="carousel-container">
+        <div class="carousel">
+          <div class="carousel-slide"><img src="https://assets.kevinbao.com/_0Z80454.avif" alt="Auroral Borealis" loading="lazy" /></div>
+          <div class="carousel-slide"><img src="https://assets.kevinbao.com/_DSC9779.avif" alt="Chasing the stars" loading="lazy" /></div>
+          <div class="carousel-slide"><img src="https://assets.kevinbao.com/DSC_1497.avif" alt="Black bear cub" loading="lazy" /></div>
+          <div class="carousel-slide"><img src="https://assets.kevinbao.com/DSC_0391.avif" alt="Grizzly bear" loading="lazy" /></div>
+          <div class="carousel-slide"><img src="https://assets.kevinbao.com/DJI_0928.avif" alt="Padar Island" loading="lazy" /></div>
+          <div class="carousel-slide"><img src="https://assets.kevinbao.com/_DSC2577.avif" alt="Chain Lakes Loop" loading="lazy" /></div>
+          <div class="carousel-slide"><img src="https://assets.kevinbao.com/_DSC1497.avif" alt="Lake Viviane" loading="lazy" /></div>
+          <div class="carousel-slide"><img src="https://assets.kevinbao.com/_DSC3390.avif" alt="Mountain goats" loading="lazy" /></div>
+          <div class="carousel-slide"><img src="https://assets.kevinbao.com/_DSC0706.avif" alt="Diamond Head" loading="lazy" /></div>
+          <div class="carousel-slide"><img src="https://assets.kevinbao.com/_DSC7252.avif" alt="Total solar eclipse" loading="lazy" /></div>
+          <div class="carousel-slide"><img src="https://assets.kevinbao.com/_DSC7572.avif" alt="Pantheon" loading="lazy" /></div>
+          <div class="carousel-slide"><img src="https://assets.kevinbao.com/_DSC8700.avif" alt="Temple of Castor and Pollux" loading="lazy" /></div>
+          <div class="carousel-slide"><img src="https://assets.kevinbao.com/_DSC3513.avif" alt="Tiger" loading="lazy" /></div>
+          <div class="carousel-slide"><img src="https://assets.kevinbao.com/DJI_0649.avif" alt="Gothic Basin" loading="lazy" /></div>
+          <div class="carousel-slide"><img src="https://assets.kevinbao.com/IMG_8289.avif" alt="Thunderbirds" loading="lazy" /></div>
+          <div class="carousel-slide"><img src="https://assets.kevinbao.com/_DSC2159.avif" alt="Teton Crest Trail" loading="lazy" /></div>
+          <div class="carousel-slide"><img src="https://assets.kevinbao.com/_DSC2343.avif" alt="Teton Range" loading="lazy" /></div>
+          <div class="carousel-slide"><img src="https://assets.kevinbao.com/_DSC5571.avif" alt="Kiyomizu-dera" loading="lazy" /></div>
+          <div class="carousel-slide"><img src="https://assets.kevinbao.com/_DSC6004.avif" alt="Arashiyama Bamboo Forest" loading="lazy" /></div>
+          <div class="carousel-slide"><img src="https://assets.kevinbao.com/DJI_0286.avif" alt="Jigokudani" loading="lazy" /></div>
+          <div class="carousel-slide"><img src="https://assets.kevinbao.com/IMG_2249.avif" alt="Sunset" loading="lazy" /></div>
+          <div class="carousel-slide"><img src="https://assets.kevinbao.com/_DSC5963.avif" alt="Big Sur" loading="lazy" /></div>
+          <div class="carousel-slide"><img src="https://assets.kevinbao.com/_DSC5059.avif" alt="Denali" loading="lazy" /></div>
+          <div class="carousel-slide"><img src="https://assets.kevinbao.com/_DSC3980.avif" alt="Mt. Adams" loading="lazy" /></div>
+          <div class="carousel-slide"><img src="https://assets.kevinbao.com/DSC02098.avif" alt="Wonderland Trail" loading="lazy" /></div>
+          <div class="carousel-slide"><img src="https://assets.kevinbao.com/DSC_0363.avif" alt="Seattle" loading="lazy" /></div>
+        </div>
+        <button class="carousel-button prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="carousel-button next" onclick="moveSlide(1)">&#10095;</button>
+      </div>
 
-    <section id="captions">
+      <script>
+       const carousel = document.querySelector('.carousel');
+       const slides = document.querySelectorAll('.carousel-slide');
+       const totalSlides = slides.length;
+       let currentSlide = 0;
 
-      <span style="display: block;">Aurora Borealis - Deception Pass, WA</span>
-      <span style="display: none;">Chasing the stars - Mt. Rainier, WA</span>
-      <span style="display: none;">Black bear cub - Sequoia National Park, CA</span>
-      <span style="display: none;">Grizzly bear - Banff National Park, Canada</span>
-      <span style="display: none;">Padar Island - Indonesia</span>
-      <span style="display: none;">Chain Lakes Loop - Mt. Baker Wilderness, WA</span>
-      <span style="display: none;">Lake Viviane - The Enchantments, WA</span>
-      <span style="display: none;">Mountain goats - The Enchantments, WA</span>
-      <span style="display: none;">Diamond Head - Oahu, HI</span>
-      <span style="display: none;">Total solar eclipse - Oregon</span>
-      <span style="display: none;">Pantheon - Rome, Italy</span>
-      <span style="display: none;">Temple of Castor and Pollux - Rome, Italy</span>
-      <span style="display: none;">Tiger - San Diego Zoo, CA</span>
-      <span style="display: none;">Gothic Basin - North Cascades, WA</span>
-      <span style="display: none;">Thunderbirds - McChord Air Force Base, WA</span>
-      <span style="display: none;">Teton Crest Trail - Wyoming</span>
-      <span style="display: none;">Teton Range - Wyoming</span>
-      <span style="display: none;">Kiyomizu-dera - Kyoto, Japan</span>
-      <span style="display: none;">Arashiyama Bamboo Forest - Kyoto, Japan</span>
-      <span style="display: none;">Jigokudani - Noboribetsu, Japan</span>
-      <span style="display: none;">Sunset - Deception Pass, WA</span>
-      <span style="display: none;">Big Sur - California</span>
-      <span style="display: none;">Denali - Alaska</span>
-      <span style="display: none;">Mt. Adams - Washington</span>
-      <span style="display: none;">Wonderland Trail - Mt. Rainier, WA</span>
-      <span style="display: none;">From above - Seattle, WA</span>
+       function moveSlide(direction) {
+         currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+
+         slides.forEach((slide, index) => {
+           slide.classList.remove('active', 'left', 'right');
+
+           if (index === currentSlide) {
+             slide.classList.add('active');
+           } else if (index === (currentSlide - 1 + totalSlides) % totalSlides) {
+             slide.classList.add('left');
+           } else if (index === (currentSlide + 1) % totalSlides) {
+             slide.classList.add('right');
+           }
+         });
+
+         carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+       }
+
+       document.addEventListener('DOMContentLoaded', () => {
+         moveSlide(0);
+       });
+      </script>
     </section>
   </body>
 </html>
