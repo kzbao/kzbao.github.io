@@ -12,8 +12,24 @@
     <link rel="stylesheet" href="stylesheets/base-min.css">
 
     <style>
-     #headshot{border-radius:1%;display:block;margin:0 auto 40px;width:100%;height:100%}.carousel-container{position:relative;overflow:hidden;max-width:1200px;margin:0 auto;aspect-ratio:4/3}.carousel{display:flex;transition:transform .5s ease-in-out;position:relative}.carousel-slide{min-width:100%;transition:opacity .5s ease-in-out,transform .5s ease-in-out;position:relative}.carousel-slide img{width:100%;display:block}.carousel-button{position:absolute;top:50%;transform:translateY(-50%);background-color:rgba(0,0,0,.4);color:rgba(256,256,256,0.6);border:none;border-radius:4px;box-sizing:border-box;padding:10px 10px;cursor:pointer;font-size:18px;z-index:10}@media(hover:hover){.carousel-button:hover{background-color:rgba(0,0,0,.8);color:rgba(256,256,256,1)}}.carousel-button.prev{left:10px}.carousel-button.next{right:10px}.carousel-slide{opacity:.5;transform:scale(.8)}.carousel-slide.active{opacity:1;transform:scale(1)}.carousel-slide.left,.carousel-slide.right{opacity:.7;transform:scale(.9)}
+      #panorama{border-radius:1%;display:block;margin:0 auto 40px;width:960px;height:960px;max-width:100%}
+      @media (max-width:1280px){#panorama{width:900px;height:900px}}
+      @media (max-width:1024px){#panorama{width:700px;height:700px}}
+      @media (max-width:768px){#panorama{width:530px;height:530px}}
+      @media (max-width:640px){#panorama{width:450px;height:450px}}
+      .carousel-container{position:relative;overflow:hidden;max-width:1200px;margin:0 auto;aspect-ratio:4/3}
+      .carousel{display:flex;transition:transform .5s ease-in-out;position:relative}
+      .carousel-slide{min-width:100%;transition:opacity .5s ease-in-out,transform .5s ease-in-out;position:relative}
+      .carousel-slide img{width:100%;display:block}
+      .carousel-button{position:absolute;top:50%;transform:translateY(-50%);background-color:rgba(0,0,0,.4);color:rgba(256,256,256,0.6);border:none;border-radius:4px;box-sizing:border-box;padding:10px 10px;cursor:pointer;font-size:18px;z-index:10}
+      @media(hover:hover){.carousel-button:hover{background-color:rgba(0,0,0,.8);color:rgba(256,256,256,1)}}
+      .carousel-button.prev{left:10px}
+      .carousel-button.next{right:10px}
+      .carousel-slide{opacity:.5;transform:scale(.8)}.carousel-slide.active{opacity:1;transform:scale(1)}.carousel-slide.left,.carousel-slide.right{opacity:.7;transform:scale(.9)}
     </style>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-7MPK0QFS3R"></script>
     <script>
@@ -30,7 +46,18 @@
       <div>
         <h1>Hi, I'm Kevin Zhao Bao.</h1>
 
-        <img id="headshot" src="https://assets.kevinbao.com/bridge.avif" alt="Headshot, bridge" width="400px" height="400px" />
+        <div id="panorama"></div>
+        <script>
+          pannellum.viewer('panorama', {
+            "type": "equirectangular",
+            "panorama": "https://assets.kevinbao.com/bridge_pano.avif",
+            "autoLoad": true,
+            "yaw": 160,
+            "pitch": -35,
+            "autoRotate": -2,
+            "autoRotateInactivityDelay": 5000,
+          });
+        </script>
       </div>
 
       <div>
