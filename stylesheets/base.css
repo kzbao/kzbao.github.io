@@ -28,6 +28,12 @@ h1 {
   text-align: center;
 }
 
+@media (max-width: 640px) {
+  h1 {
+    font-size: 3em;
+  }
+}
+
 h2 {
   color: #7bc275;
   font-size: 2em;
