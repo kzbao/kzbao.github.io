@@ -12,11 +12,7 @@
     <link rel="stylesheet" href="stylesheets/base.css">
 
     <style>
-      #panorama{border-radius:1%;display:block;margin:0 auto 40px;width:960px;height:960px;max-width:100%}
-      @media (max-width:1280px){#panorama{width:900px;height:900px}}
-      @media (max-width:1024px){#panorama{width:700px;height:700px}}
-      @media (max-width:768px){#panorama{width:530px;height:530px}}
-      @media (max-width:640px){#panorama{width:450px;height:450px}}
+      #panorama{border-radius:1%;display:block;margin:0 auto 40px;width:100%;aspect-ratio:1;}
       .carousel-container{position:relative;overflow:hidden;max-width:1200px;margin:0 auto;aspect-ratio:4/3}
       .carousel{display:flex;transition:transform .5s ease-in-out;position:relative}
       .carousel-slide{min-width:100%;transition:opacity .5s ease-in-out,transform .5s ease-in-out;position:relative}
