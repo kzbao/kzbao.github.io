@@ -11,19 +11,6 @@
     <link rel="preload" href="stylesheets/hack.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="stylesheets/base.css">
 
-    <style>
-      #panorama{border-radius:1%;display:block;margin:0 auto 40px;width:100%;aspect-ratio:1;}
-      .carousel-container{position:relative;overflow:hidden;max-width:1200px;margin:0 auto;aspect-ratio:4/3}
-      .carousel{display:flex;transition:transform .5s ease-in-out;position:relative}
-      .carousel-slide{min-width:100%;transition:opacity .5s ease-in-out,transform .5s ease-in-out;position:relative}
-      .carousel-slide img{width:100%;display:block}
-      .carousel-button{position:absolute;top:50%;transform:translateY(-50%);background-color:rgba(0,0,0,.4);color:rgba(256,256,256,0.6);border:none;border-radius:4px;box-sizing:border-box;padding:10px 10px;cursor:pointer;font-size:18px;z-index:10}
-      @media(hover:hover){.carousel-button:hover{background-color:rgba(0,0,0,.8);color:rgba(256,256,256,1)}}
-      .carousel-button.prev{left:10px}
-      .carousel-button.next{right:10px}
-      .carousel-slide{opacity:.5;transform:scale(.8)}.carousel-slide.active{opacity:1;transform:scale(1)}.carousel-slide.left,.carousel-slide.right{opacity:.7;transform:scale(.9)}
-    </style>
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css" />
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
 
@@ -38,11 +25,11 @@
   </head>
 
   <body>
-    <section class="main">
+    <main>
       <div>
         <h1>Hi, I'm Kevin Zhao Bao.</h1>
 
-        <div id="panorama"></div>
+        <div id="panorama" style="border-radius: 1%; display: block; margin: 0 auto 40px; width: 100%; aspect-ratio: 1;"></div>
         <script>
           pannellum.viewer('panorama', {
             "type": "equirectangular",
@@ -88,7 +75,7 @@
         </p>
 
         <p>
-          Today, I'm co-founder and CTO of <a href="https://www.summed.ai">Summed AI</a>. We're building an AI copilot for insurance as part of Y Combinator's first fall batch F24.
+          Today, I'm co-founder and CTO of <a href="https://www.summed.ai">Summed AI</a>, where we're taking on the insurance industry. Drawing from our experiences at Assurance, my co-founders and I saw an opportunity to use large language models to solve a multitude of problems in this space. We attended Y Combinator's first fall batch F24 and moved back to our home in Seattle after to continue building the business.
         </p>
 
         <p>
@@ -111,70 +98,89 @@
       <div>
         <p>Some of my photos (taken on my Nikon D750 & Z8, DJI Mini 3 Pro, or Insta360 X4):</p>
       </div>
-    </section>
 
-    <section id="photos">
-      <div class="carousel-container">
-        <div class="carousel">
-          <div class="carousel-slide"><img src="https://assets.kevinbao.com/_0Z80454.avif" alt="Auroral Borealis" loading="lazy" /></div>
-          <div class="carousel-slide"><img src="https://assets.kevinbao.com/_DSC9779.avif" alt="Chasing the stars" loading="lazy" /></div>
-          <div class="carousel-slide"><img src="https://assets.kevinbao.com/DSC_1497.avif" alt="Black bear cub" loading="lazy" /></div>
-          <div class="carousel-slide"><img src="https://assets.kevinbao.com/DSC_0391.avif" alt="Grizzly bear" loading="lazy" /></div>
-          <div class="carousel-slide"><img src="https://assets.kevinbao.com/DJI_0928.avif" alt="Padar Island" loading="lazy" /></div>
-          <div class="carousel-slide"><img src="https://assets.kevinbao.com/_DSC2577.avif" alt="Chain Lakes Loop" loading="lazy" /></div>
-          <div class="carousel-slide"><img src="https://assets.kevinbao.com/_DSC1497.avif" alt="Lake Viviane" loading="lazy" /></div>
-          <div class="carousel-slide"><img src="https://assets.kevinbao.com/_DSC3390.avif" alt="Mountain goats" loading="lazy" /></div>
-          <div class="carousel-slide"><img src="https://assets.kevinbao.com/_DSC0706.avif" alt="Diamond Head" loading="lazy" /></div>
-          <div class="carousel-slide"><img src="https://assets.kevinbao.com/_DSC7252.avif" alt="Total solar eclipse" loading="lazy" /></div>
-          <div class="carousel-slide"><img src="https://assets.kevinbao.com/_DSC7572.avif" alt="Pantheon" loading="lazy" /></div>
-          <div class="carousel-slide"><img src="https://assets.kevinbao.com/_DSC8700.avif" alt="Temple of Castor and Pollux" loading="lazy" /></div>
-          <div class="carousel-slide"><img src="https://assets.kevinbao.com/_DSC3513.avif" alt="Tiger" loading="lazy" /></div>
-          <div class="carousel-slide"><img src="https://assets.kevinbao.com/DJI_0649.avif" alt="Gothic Basin" loading="lazy" /></div>
-          <div class="carousel-slide"><img src="https://assets.kevinbao.com/IMG_8289.avif" alt="Thunderbirds" loading="lazy" /></div>
-          <div class="carousel-slide"><img src="https://assets.kevinbao.com/_DSC2159.avif" alt="Teton Crest Trail" loading="lazy" /></div>
-          <div class="carousel-slide"><img src="https://assets.kevinbao.com/_DSC2343.avif" alt="Teton Range" loading="lazy" /></div>
-          <div class="carousel-slide"><img src="https://assets.kevinbao.com/_DSC5571.avif" alt="Kiyomizu-dera" loading="lazy" /></div>
-          <div class="carousel-slide"><img src="https://assets.kevinbao.com/_DSC6004.avif" alt="Arashiyama Bamboo Forest" loading="lazy" /></div>
-          <div class="carousel-slide"><img src="https://assets.kevinbao.com/DJI_0286.avif" alt="Jigokudani" loading="lazy" /></div>
-          <div class="carousel-slide"><img src="https://assets.kevinbao.com/IMG_2249.avif" alt="Sunset" loading="lazy" /></div>
-          <div class="carousel-slide"><img src="https://assets.kevinbao.com/_DSC5963.avif" alt="Big Sur" loading="lazy" /></div>
-          <div class="carousel-slide"><img src="https://assets.kevinbao.com/_DSC5059.avif" alt="Denali" loading="lazy" /></div>
-          <div class="carousel-slide"><img src="https://assets.kevinbao.com/_DSC3980.avif" alt="Mt. Adams" loading="lazy" /></div>
-          <div class="carousel-slide"><img src="https://assets.kevinbao.com/DSC02098.avif" alt="Wonderland Trail" loading="lazy" /></div>
-          <div class="carousel-slide"><img src="https://assets.kevinbao.com/DSC_0363.avif" alt="Seattle" loading="lazy" /></div>
-        </div>
-        <button class="carousel-button prev" onclick="moveSlide(-1)">&#10094;</button>
-        <button class="carousel-button next" onclick="moveSlide(1)">&#10095;</button>
+      <div class="photo-grid">
+        <a data-fslightbox="gallery" href="https://assets.kevinbao.com/_0Z80454.avif">
+          <img src="https://assets.kevinbao.com/_0Z80454.avif" alt="Auroral Borealis" loading="lazy" />
+        </a>
+        <a data-fslightbox="gallery" href="https://assets.kevinbao.com/_DSC9779.avif">
+          <img src="https://assets.kevinbao.com/_DSC9779.avif" alt="Chasing the stars" loading="lazy" />
+        </a>
+        <a data-fslightbox="gallery" href="https://assets.kevinbao.com/DSC_1497.avif">
+          <img src="https://assets.kevinbao.com/DSC_1497.avif" alt="Black bear cub" loading="lazy" />
+        </a>
+        <a data-fslightbox="gallery" href="https://assets.kevinbao.com/DSC_0391.avif">
+          <img src="https://assets.kevinbao.com/DSC_0391.avif" alt="Grizzly bear" loading="lazy" />
+        </a>
+        <a data-fslightbox="gallery" href="https://assets.kevinbao.com/DJI_0928.avif">
+          <img src="https://assets.kevinbao.com/DJI_0928.avif" alt="Padar Island" loading="lazy" />
+        </a>
+        <a data-fslightbox="gallery" href="https://assets.kevinbao.com/_DSC2577.avif">
+          <img src="https://assets.kevinbao.com/_DSC2577.avif" alt="Chain Lakes Loop" loading="lazy" />
+        </a>
+        <a data-fslightbox="gallery" href="https://assets.kevinbao.com/_DSC1497.avif">
+          <img src="https://assets.kevinbao.com/_DSC1497.avif" alt="Lake Viviane" loading="lazy" />
+        </a>
+        <a data-fslightbox="gallery" href="https://assets.kevinbao.com/_DSC3390.avif">
+          <img src="https://assets.kevinbao.com/_DSC3390.avif" alt="Mountain goats" loading="lazy" />
+        </a>
+        <a data-fslightbox="gallery" href="https://assets.kevinbao.com/_DSC0706.avif">
+          <img src="https://assets.kevinbao.com/_DSC0706.avif" alt="Diamond Head" loading="lazy" />
+        </a>
+        <a data-fslightbox="gallery" href="https://assets.kevinbao.com/_DSC7252.avif">
+          <img src="https://assets.kevinbao.com/_DSC7252.avif" alt="Total solar eclipse" loading="lazy" />
+        </a>
+        <a data-fslightbox="gallery" href="https://assets.kevinbao.com/_DSC7572.avif">
+          <img src="https://assets.kevinbao.com/_DSC7572.avif" alt="Pantheon" loading="lazy" />
+        </a>
+        <a data-fslightbox="gallery" href="https://assets.kevinbao.com/_DSC8700.avif">
+          <img src="https://assets.kevinbao.com/_DSC8700.avif" alt="Temple of Castor and Pollux" loading="lazy" />
+        </a>
+        <a data-fslightbox="gallery" href="https://assets.kevinbao.com/_DSC3513.avif">
+          <img src="https://assets.kevinbao.com/_DSC3513.avif" alt="Tiger" loading="lazy" />
+        </a>
+        <a data-fslightbox="gallery" href="https://assets.kevinbao.com/DJI_0649.avif">
+          <img src="https://assets.kevinbao.com/DJI_0649.avif" alt="Gothic Basin" loading="lazy" />
+        </a>
+        <a data-fslightbox="gallery" href="https://assets.kevinbao.com/IMG_8289.avif">
+          <img src="https://assets.kevinbao.com/IMG_8289.avif" alt="Thunderbirds" loading="lazy" />
+        </a>
+        <a data-fslightbox="gallery" href="https://assets.kevinbao.com/_DSC2159.avif">
+          <img src="https://assets.kevinbao.com/_DSC2159.avif" alt="Teton Crest Trail" loading="lazy" />
+        </a>
+        <a data-fslightbox="gallery" href="https://assets.kevinbao.com/_DSC2343.avif">
+          <img src="https://assets.kevinbao.com/_DSC2343.avif" alt="Teton Range" loading="lazy" />
+        </a>
+        <a data-fslightbox="gallery" href="https://assets.kevinbao.com/_DSC5571.avif">
+          <img src="https://assets.kevinbao.com/_DSC5571.avif" alt="Kiyomizu-dera" loading="lazy" />
+        </a>
+        <a data-fslightbox="gallery" href="https://assets.kevinbao.com/_DSC6004.avif">
+          <img src="https://assets.kevinbao.com/_DSC6004.avif" alt="Arashiyama Bamboo Forest" loading="lazy" />
+        </a>
+        <a data-fslightbox="gallery" href="https://assets.kevinbao.com/DJI_0286.avif">
+          <img src="https://assets.kevinbao.com/DJI_0286.avif" alt="Jigokudani" loading="lazy" />
+        </a>
+        <a data-fslightbox="gallery" href="https://assets.kevinbao.com/IMG_2249.avif">
+          <img src="https://assets.kevinbao.com/IMG_2249.avif" alt="Sunset" loading="lazy" />
+        </a>
+        <a data-fslightbox="gallery" href="https://assets.kevinbao.com/_DSC5963.avif">
+          <img src="https://assets.kevinbao.com/_DSC5963.avif" alt="Big Sur" loading="lazy" />
+        </a>
+        <a data-fslightbox="gallery" href="https://assets.kevinbao.com/_DSC5059.avif">
+          <img src="https://assets.kevinbao.com/_DSC5059.avif" alt="Denali" loading="lazy" />
+        </a>
+        <a data-fslightbox="gallery" href="https://assets.kevinbao.com/_DSC3980.avif">
+          <img src="https://assets.kevinbao.com/_DSC3980.avif" alt="Mt. Adams" loading="lazy" />
+        </a>
+        <a data-fslightbox="gallery" href="https://assets.kevinbao.com/DSC02098.avif">
+          <img src="https://assets.kevinbao.com/DSC02098.avif" alt="Wonderland Trail" loading="lazy" />
+        </a>
+        <a data-fslightbox="gallery" href="https://assets.kevinbao.com/DSC_0363.avif">
+          <img src="https://assets.kevinbao.com/DSC_0363.avif" alt="Seattle" loading="lazy" />
+        </a>
       </div>
+    </main>
 
-      <script>
-       const carousel = document.querySelector('.carousel');
-       const slides = document.querySelectorAll('.carousel-slide');
-       const totalSlides = slides.length;
-       let currentSlide = 0;
-
-       function moveSlide(direction) {
-         currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
-
-         slides.forEach((slide, index) => {
-           slide.classList.remove('active', 'left', 'right');
-
-           if (index === currentSlide) {
-             slide.classList.add('active');
-           } else if (index === (currentSlide - 1 + totalSlides) % totalSlides) {
-             slide.classList.add('left');
-           } else if (index === (currentSlide + 1) % totalSlides) {
-             slide.classList.add('right');
-           }
-         });
-
-         carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
-       }
-
-       document.addEventListener('DOMContentLoaded', () => {
-         moveSlide(0);
-       });
-      </script>
-    </section>
+    <script src="https://cdn.jsdelivr.net/npm/fslightbox@3.4.2/index.min.js"></script>
   </body>
 </html>

@@ -10,13 +10,13 @@ body {
   font-family: 'Hack', monospace;
 }
 
-.main {
+main {
   margin: 40px auto;
   max-width: 960px;
   padding: 0 10px;
 }
 
-.main > div {
+main > div {
   margin-bottom: 40px;
 }
 
@@ -53,4 +53,10 @@ img {
   object-fit: contain;
   max-width: 100%;
   max-height: 100%;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
 }
