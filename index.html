@@ -45,34 +45,42 @@
 
       <div>
         <p>
-          I'm a problem solver, engineering leader, and lifelong adventurer.
-          I currently live in Bellevue, Washington; my wife and I spend most of our time between here and South Korea at the moment. I grew up mostly in Ellicott City, Maryland, where I consumed countless blue crabs, and root for New England sports teams thanks to being born in Rhode Island.
-          I attended Carnegie Mellon University and graduated at age 20 with dual degrees in computer science and economics, two of my interests to this day.
+          I’m a problem solver, engineering leader, and lifelong adventurer, equally at home building things or
+          exploring the world’s edges.
+          As a second-generation Chinese-American mostly raised in Maryland, I now live in Bellevue, Washington with my wife and our Australian Shepherd.
+          I grew up on blue crabs & Old Bay, loyalty to New England sports (thanks to being born in Rhode Island), and an enduring curiosity for how things work. This led me to Carnegie Mellon University, where I graduated at 20 with dual degrees in Computer Science and Economics, two passions that continue to shape how I think and build.
         </p>
 
-        <p>
-          Music, mountains, and computers define a large part of who I am. I remember being fascinated by these topics ever since childhood.
-          Why do certain chord progressions sound so good and can I discover a new one? How should I hike, climb, fly, ski, or photograph this mountain and explore its secrets? What can we achieve and build with computers for both work and play?
-          This has led to a lifelong pursuit of mastering all three.
-        </p>
-
-        <p>
-          I began programming when I discovered TI Basic and Assembly on my calculator in middle school and this quickly became more interesting than most of my classes. Fortunately, many of my teachers were ok with this and actually encouraged me to explore this, even if it meant my math homework for the night would eventually reduce to pressing a couple of buttons on the calculator.
-          I hope to inspire people around me in the same way those teachers and mentors did for me.
-        </p>
-
-        <p>
-          I started my software engineering career as an intern at Facebook pre-IPO in 2011. During that summer, I worked on the first version of Timeline (aka the Facebook profile) and tried to absorb as much as I could. I was lucky to witness how a technology company made bets that would shape our world in the years that followed.
-          A year later, I started working on Windows user experience at Microsoft, first as an intern and then as a full time employee. My projects included the first run experience, the retail demo experience, and enabling ads in Windows as part of a transition to a free Windows business model. This provided me experience building product across the full stack from OS kernel to making things look nice in web browsers.
-        </p>
-
-        <p>
-          After putting ads in the start menu (yes, that was me) dampened my spirits, I decided to look for something completely different and that's when I dove into the startup world with Karat. I joined as the 2nd engineer and 8th overall employee and helped to build the Karat platform, invent interview engineering (interview methodology, questions, evaluation), and handle anything else that came up as one does at a startup. Over the course of five years, I wore many hats including late-night coding, hiring, product management, and people management. My proudest accomplishment was helping to build a team that can sustain itself successfully beyond my day-to-day tenure.
-        </p>
-
-        <p>
-          I then took a role at Assurance IQ, an insurtech company based out of Seattle. I joined post-acquisition to help build out the mortgage/personal loans business during COVID-era interest rates. By the end, I was accountable for our lead generation platform behind $500M+ in annual revenue across different types of insurance/financial products. I managed both product and platform engineering teams. Assurance turned out to be a massive learning opportunity and I'm grateful for the time spent there.
-        </p>
+        <a href="#" id="expand-bio-link" onclick="toggleBio(event); return false;">[Click to expand bio]</a>
+        <div id="hidden-bio" style="display: none;">
+          <p>
+            I began programming when I discovered TI Basic and Assembly on my calculator in middle school and this quickly became more interesting than most of my classes. Fortunately, many of my teachers were ok with this and actually encouraged me to explore this, even if it meant my math homework for the night would eventually reduce to pressing a couple of buttons on the calculator.
+            I hope to inspire people around me in the same way those teachers and mentors did for me.
+          </p>
+          <p>
+            I started my software engineering career as an intern at Facebook pre-IPO in 2011. During that summer, I worked on the first version of Timeline (aka the Facebook profile) and tried to absorb as much as I could. I was lucky to witness how a technology company made bets that would shape our world in the years that followed.
+            A year later, I started working on Windows user experience at Microsoft, first as an intern and then as a full time employee. My projects included the first run experience, the retail demo experience, and enabling ads in Windows as part of a transition to a free Windows business model. This provided me experience building product across the full stack from OS kernel to making things look nice in web browsers.
+          </p>
+          <p>
+            After putting ads in the start menu (yes, that was me) dampened my spirits, I decided to look for something completely different and that's when I dove into the startup world with Karat. I joined as the 2nd engineer and 8th overall employee and helped to build the Karat platform, invent interview engineering (interview methodology, questions, evaluation), and handle anything else that came up as one does at a startup. Over the course of five years, I wore many hats including late-night coding, hiring, product management, and people management. My proudest accomplishment was helping to build a team that can sustain itself successfully beyond my day-to-day tenure.
+          </p>
+          <p>
+            I then took a role at Assurance IQ, an insurtech company based out of Seattle. I joined post-acquisition to help build out the mortgage/personal loans business during COVID-era interest rates. By the end, I was accountable for our lead generation platform behind $500M+ in annual revenue across different types of insurance/financial products. I managed both product and platform engineering teams. Assurance turned out to be a massive learning opportunity and I'm grateful for the time spent there.
+          </p>
+        </div>
+        <script>
+          function toggleBio(event) {
+            const hiddenBio = document.getElementById('hidden-bio');
+            const expandLink = document.getElementById('expand-bio-link');
+            if (hiddenBio.style.display === 'none') {
+              hiddenBio.style.display = 'block';
+              expandLink.textContent = '[Click to collapse bio]';
+            } else {
+              hiddenBio.style.display = 'none';
+              expandLink.textContent = '[Click to expand bio]';
+            }
+          }
+        </script>
 
         <p>
           Today, I'm co-founder and CTO of <a href="https://www.moonsethealth.com">Moonset Health</a> (previous known as Summed AI), where we're using large language models to solve a multitude of problems in technologically outdated industries like insurance and the medical field. We attended Y Combinator's first fall batch F24 and moved back to our home in Seattle after to continue building the business.
